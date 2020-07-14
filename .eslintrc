@@ -1,0 +1,6 @@
+{
+  "extends": "@ravorona/typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}

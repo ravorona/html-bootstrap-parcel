@@ -1,0 +1,6 @@
+{
+    "sourceMap": true,
+    "includePaths": [
+        "node_modules"
+    ]
+}

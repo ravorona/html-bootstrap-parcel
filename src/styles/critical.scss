@@ -1,0 +1,38 @@
+/**
+ * Critical stylesheet
+ */
+@import 'sanitize.css';
+
+body {
+    background: #fefefe;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 460px;
+    height: 100vh;
+
+    svg {
+        width: 300px;
+    }
+
+    nav {
+        text-align: center;
+        border-top: 1px solid rgba(#111, .1);
+    }
+
+    a {
+        color: cadetblue;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}

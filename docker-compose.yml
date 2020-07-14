@@ -1,0 +1,35 @@
+#
+# Docker compose
+# Common configurations
+#
+version: '3.7'
+
+services:
+    # Apache web server
+    web:
+        image: httpd
+        env_file: .env
+        working_dir: /var/www/html
+        volumes:
+            - ./docker/httpd.conf:/usr/local/apache2/conf/httpd.conf
+            - ./public:/var/www/html
+        ports:
+            - ${HTTP_PORT}:80
+        networks:
+            - frontproxynet
+            - default
+
+        # For traefik user
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.services.starter.loadbalancer.server.scheme=http"
+            - "traefik.http.services.starter.loadbalancer.server.port=80"
+            - "traefik.http.services.starter.loadbalancer.passhostheader=true"
+            - "traefik.http.routers.starter.entrypoints=http"
+            - "traefik.http.routers.starter.rule=Host(`${HOSTNAME}`)"
+            - "traefik.http.routers.starter.service=starter"
+networks:
+    frontproxynet:
+        external: true
+
+    default:

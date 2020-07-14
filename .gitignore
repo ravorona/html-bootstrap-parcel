@@ -1,0 +1,10 @@
+node_modules
+public
+dist
+
+yarn-error.log
+
+.cache
+.sass-cache
+.idea
+.env
