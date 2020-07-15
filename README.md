@@ -27,12 +27,17 @@ yarn lint:js
 ```
 ### Build assets
 ```bash
-# Development mode
+# Development mode: Hot reload and Parcel dev server
 yarn build
 
 # Production mode
 yarn build:production
 
-# Hot reload mode
+# Hot reload mode only
 yarn hot
+```
+### Built-in docker service
+```bash
+# Start httpd web server
+docker-compose up
 ```
