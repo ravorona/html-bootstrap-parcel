@@ -1,7 +1,19 @@
 # HTML Boilerplate 🌍
 Bootstrap blank HTML app with [Parcel](https://parceljs.org) bundler
 
-## Commands
+## 🚀 Installation
+```bash
+# Clone repository
+git clone git@github.com:ravorona/html-bootstrap.git
+
+# Change your working directory
+cd html-boilerplate
+
+# Install dependencies
+yarn
+```
+
+## 🎬 Commands
 ### Lint assets
 ```bash
 # Lint stylesheets & javascripts
