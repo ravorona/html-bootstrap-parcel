@@ -32,12 +32,6 @@
       "**/.DS_Store"
     ]
   },
-  "pwaManifest": {
-    "name": "HTML Boilerplate",
-    "shortName": "HTML",
-    "startURL": "/",
-    "theme": "#111111"
-  },
   "engines": {
     "node": ">= 10.0.0",
     "yarn": ">= 1.22"
@@ -54,7 +48,6 @@
     "parcel-plugin-inline-source": "^1.0.0",
     "parcel-plugin-metaimage": "^1.2.3",
     "parcel-plugin-purgecss": "^3.0.0",
-    "parcel-plugin-pwa-manifest": "^3.0.10",
     "parcel-plugin-static-files-copy": "^2.4.3",
     "postcss-css-variables": "^0.17.0",
     "postcss-custom-media": "^7.0.8",
