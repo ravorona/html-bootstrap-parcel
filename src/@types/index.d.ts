@@ -1,7 +1,9 @@
+import Main from '~/scripts/components/Main'
+
 export {}
 
 declare global {
     interface Window {
-        appInitiated: boolean
+        application: Main
     }
 }
