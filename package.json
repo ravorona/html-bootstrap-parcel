@@ -17,6 +17,27 @@
     "build": "parcel src/index.html -d public -p 8080 --open",
     "build:production": "parcel build src/index.html -d public --no-cache"
   },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/fonts",
+        "staticOutDir": "fonts"
+      },
+      {
+        "staticPath": "src/svg",
+        "staticOutDir": "svg"
+      }
+    ],
+    "excludeGlob": [
+      "**/.DS_Store"
+    ]
+  },
+  "pwaManifest": {
+    "name": "HTML Boilerplate",
+    "shortName": "HTML",
+    "startURL": "/",
+    "theme": "#111111"
+  },
   "engines": {
     "node": ">= 10.0.0",
     "yarn": ">= 1.22"
@@ -29,6 +50,12 @@
     "@typescript-eslint/parser": "^3.6.1",
     "eslint": "^7.4.0",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "parcel-plugin-inline-source": "^1.0.0",
+    "parcel-plugin-metaimage": "^1.2.3",
+    "parcel-plugin-purgecss": "^3.0.0",
+    "parcel-plugin-pwa-manifest": "^3.0.10",
+    "parcel-plugin-static-files-copy": "^2.4.3",
     "postcss-css-variables": "^0.17.0",
     "postcss-custom-media": "^7.0.8",
     "postcss-custom-selectors": "^5.1.2",
