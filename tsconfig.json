@@ -23,10 +23,10 @@
   },
   "include": [
     "src/**/*",
-    "bundler.js"
+    "imagemin.config.js",
+    "purgecss.config.js"
   ],
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+    "node_modules"
   ]
 }
