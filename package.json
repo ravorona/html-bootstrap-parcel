@@ -20,10 +20,6 @@
   "staticFiles": {
     "staticPath": [
       {
-        "staticPath": "src/fonts",
-        "staticOutDir": "fonts"
-      },
-      {
         "staticPath": "src/svg",
         "staticOutDir": "svg"
       }
