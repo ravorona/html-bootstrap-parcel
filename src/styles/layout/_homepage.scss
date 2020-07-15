@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+
+    a {
+        color: cadetblue;
+        text-decoration: none;
+    }
+}
+
+.useless-selector {
+    color: red;
+}
