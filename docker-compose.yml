@@ -22,12 +22,12 @@ services:
         # For traefik user
         labels:
             - "traefik.enable=true"
-            - "traefik.http.services.starter.loadbalancer.server.scheme=http"
-            - "traefik.http.services.starter.loadbalancer.server.port=80"
-            - "traefik.http.services.starter.loadbalancer.passhostheader=true"
-            - "traefik.http.routers.starter.entrypoints=http"
-            - "traefik.http.routers.starter.rule=Host(`${HOSTNAME}`)"
-            - "traefik.http.routers.starter.service=starter"
+            - "traefik.http.services.${APP_ID}.loadbalancer.server.scheme=http"
+            - "traefik.http.services.${APP_ID}.loadbalancer.server.port=80"
+            - "traefik.http.services.${APP_ID}.loadbalancer.passhostheader=true"
+            - "traefik.http.routers.${APP_ID}.entrypoints=http"
+            - "traefik.http.routers.${APP_ID}.rule=Host(`${HOSTNAME}`)"
+            - "traefik.http.routers.${APP_ID}.service=${APP_ID}"
 networks:
     frontproxynet:
         external: true

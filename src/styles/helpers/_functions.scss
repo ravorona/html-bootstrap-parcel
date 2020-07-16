@@ -11,3 +11,28 @@
 
     @return $string;
 }
+
+/**
+ * Font size generator
+ */
+@function prem($pxVal, $base: $baseFontSize) {
+    @return #{$pxVal / $base}rem;
+}
+
+@function pem($fontSize, $letterSpacing: $baseLetterSpacing) {
+    @return #{$letterSpacing / $fontSize}em;
+}
+
+/**
+ * Spacer generator
+ */
+@function spacer ($size: 1) {
+    @return #{$baseSpacer * $size}px;
+}
+
+/**
+ * Get color
+ */
+@function col($color) {
+    @return map-get($theme-colors, '#{$color}');
+}

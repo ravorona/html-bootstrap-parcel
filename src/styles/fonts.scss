@@ -1,8 +1,4 @@
 /**
- * Critical stylesheet
- */
-
-/**
  * Config
  */
 @import './config/colors';
@@ -19,21 +15,6 @@
 @import './helpers/svg';
 
 /**
- * Sanitize
+ * Fonts
  */
-@import 'sanitize.css';
-
-/**
- * Utils
- */
-@import './utils/reset';
-
-/**
- * Components
- */
-@import './components/header';
-
-/**
- * Layout
- */
-@import './layout/base';
+@import './fonts/karbon';

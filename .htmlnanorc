@@ -1,0 +1,6 @@
+{
+    "removeComments": true,
+    "removeEmptyAttributes": true,
+    "removeUnusedCss": true,
+    "minifyCss": true
+}

@@ -2,6 +2,13 @@
     "ident": "postcss",
     "sourceMap": true,
     "plugins": {
+        "@fullhuman/postcss-purgecss": {
+            "content": [
+                "src/**/*.html",
+                "src/**/*.ts",
+                "src/**/*.js"
+            ]
+        },
         "autoprefixer":  {},
         "postcss-custom-selectors": {},
         "postcss-custom-media": {},

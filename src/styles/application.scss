@@ -5,11 +5,11 @@
 /**
  * Config
  */
-@import './config/variables';
 @import './config/colors';
 @import './config/fonts';
-@import './config/media-queries';
 @import './config/selectors';
+@import './config/variables';
+@import './config/media-queries';
 
 /**
  * Helpers
@@ -26,5 +26,5 @@
 /**
  * Layout
  */
+@import './layout/grid';
 @import './layout/homepage';
-

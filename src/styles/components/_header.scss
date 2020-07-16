@@ -6,23 +6,21 @@ header {
     height: 100vh;
 
     svg {
-        width: 300px;
+        width: 200px;
+        display: block;
+        margin: 0 auto;
     }
 
-    nav {
+    h1 {
         text-align: center;
-        border-top: 1px solid rgba(#111, .1);
-    }
-
-    a {
-        color: cadetblue;
         text-transform: uppercase;
-        text-decoration: none;
-    }
-}
+        letter-spacing: .6em;
+        font-size: prem(20);
+        font-weight: 400;
+        padding: spacer(10) 0;
 
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .04em;
+        @media (--md) {
+            font-size: prem(30);
+        }
+    }
 }
