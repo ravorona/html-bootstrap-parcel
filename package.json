@@ -14,7 +14,7 @@
     "lint:js": "eslint --fix src/scripts/{**/*,*}.ts && tsc --noEmit",
     "lint:css": "stylelint --syntax scss --fix src/styles/{**/*,*}.scss",
     "hot": "parcel watch src/index.html -d public",
-    "build": "parcel src/index.html -d public -p 8080 --open",
+    "build": "parcel src/index.html -d public -p 8080",
     "build:production": "parcel build src/index.html -d public --no-cache"
   },
   "staticFiles": {
