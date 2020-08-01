@@ -1,13 +1,13 @@
-# HTML Boilerplate 🌍
+# HTML Boilerplate w/ Parcel 🌍
 Bootstrap blank HTML app with [Parcel](https://parceljs.org) bundler
 
 ## 🚀 Installation
 ```bash
 # Clone repository
-git clone git@github.com:ravorona/html-bootstrap.git
+git clone git@github.com:ravorona/html-bootstrap-parcel.git
 
 # Change your working directory
-cd html-boilerplate
+cd html-bootstrap-parcel
 
 # Install dependencies
 yarn
